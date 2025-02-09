@@ -1,0 +1,107 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerjemah Bahasa Isyarat Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .video-container {
+            margin: 20px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .guide {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Penerjemah Bahasa Isyarat Sederhana</h1>
+        
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+
+        <div class="guide">
+            <h2>Panduan Gesture</h2>
+            <table>
+                <tr>
+                    <th>Gesture</th>
+                    <th>Arti</th>
+                </tr>
+                <tr>
+                    <td>Jempol ke Atas</td>
+                    <td>Halo</td>
+                </tr>
+                <tr>
+                    <td>Telapak Terbuka</td>
+                    <td>Terima Kasih</td>
+                </tr>
+                <tr>
+                    <td>Kepalan Tangan</td>
+                    <td>Tolong</td>
+                </tr>
+                <tr>
+                    <td>Peace Sign</td>
+                    <td>Selamat Tinggal</td>
+                </tr>
+                <tr>
+                    <td>Jari Telunjuk</td>
+                    <td>Ya</td>
+                </tr>
+                <tr>
+                    <td>Jempol ke Bawah</td>
+                    <td>Tidak</td>
+                </tr>
+                <tr>
+                    <td>Gesture OK</td>
+                    <td>Oke</td>
+                </tr>
+                <tr>
+                    <td>Gesture Telepon</td>
+                    <td>Telepon</td>
+                </tr>
+                <tr>
+                    <td>Lambaian Tangan</td>
+                    <td>Sampai Jumpa</td>
+                </tr>
+                <tr>
+                    <td>Gesture Makan</td>
+                    <td>Makan</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
